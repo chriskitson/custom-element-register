@@ -1,6 +1,6 @@
 {
   "name": "custom-element-register",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This script dynamically loads a script tag (to be used to serve a custom element) and creates a custom element tag inside another HTML element for the custom element",
   "main": "index.js",
   "files": [

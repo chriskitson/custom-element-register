@@ -1,1 +1,1 @@
-export * from './src/register';
+export * from './lib/register';
