@@ -8,5 +8,6 @@ This script dynamically loads a script tag (to be used to serve a custom element
 
 ```
 import { Register } from 'custom-element-register';
+
 Register(document.getElementBy('#myContainer'), 'my-app', 'http://my.app/element.js');
 ```
