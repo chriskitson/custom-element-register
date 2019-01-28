@@ -7,7 +7,7 @@ This script dynamically loads a script tag (to be used to serve a custom element
 ## Usage
 
 ```
-import { Register } from 'custom-element-register';
+import { RegisterCustomElement } from 'custom-element-register';
 
-Register(document.getElementBy('#myContainer'), 'my-app', 'http://my.app/element.js');
+RegisterCustomElement(document.getElementBy('#myContainer'), 'my-app', 'http://my.app/element.js');
 ```

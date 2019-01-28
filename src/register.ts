@@ -1,4 +1,4 @@
-export const Register = (container: HTMLElement, name: string, src: string): void => {
+export const RegisterCustomElement = (container: HTMLElement, name: string, src: string): void => {
   
   // dynamically insert script (if doesn't already exist)
   if (!document.getElementById(name)) {
