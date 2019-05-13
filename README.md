@@ -30,6 +30,11 @@ CreateElement(document.getElementBy('#myContainer'), 'my-app');
 
 ## Options
 
+```
+RegisterCustomElement(document.getElementBy('#myContainer'), 'my-app', '/my-app/element.js', options);
+CreateElement(document.getElementBy('#myContainer'), 'my-app', options);
+```
+
 Property | Example Value | Description
 --- | --- | ---
 className | 'myCssClassName' | CSS class name
