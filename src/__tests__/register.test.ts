@@ -1,11 +1,12 @@
-import { IAttribute, IOptions, RegisterCustomElement } from '../register';
+import { IAttribute, IEvent, IOptions, RegisterCustomElement } from '../register';
 
 interface ITestParams {
   containerId: string,
   name: string,
   url: string,
   cssClass: string,
-  attributes: IAttribute[]
+  attributes: IAttribute[],
+  events: IEvent[]
 }
 
 const params: ITestParams  = {
@@ -15,6 +16,10 @@ const params: ITestParams  = {
   }],
   containerId: 'myTestContainer',
   cssClass: 'chrisTest',
+  events: [{
+    callback: (e) => console.log('event called'),
+    name: 'example'
+  }],
   name: 'chris-app',
   url: 'http://a-test.url/'
 };

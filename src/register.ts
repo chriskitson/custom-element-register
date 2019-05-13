@@ -1,11 +1,17 @@
 export interface IAttribute {
   name: string;
-  value: any;
+  value: string;
+ }
+
+ export interface IEvent {
+  name: string;
+  callback: any;
  }
  
  export interface IOptions {
    className?: string;
-   attributes?: IAttribute[]
+   attributes?: IAttribute[];
+   events?: IEvent[];
  }
 
 export const RegisterScript = (name: string, src: string): void => {
@@ -29,6 +35,10 @@ export const CreateElement = (container: HTMLElement, name: string, options?: IO
   // add attributes
   if (options && options.attributes && options.attributes.length > 0) {
     options.attributes.forEach((attr: IAttribute) => element.setAttribute(attr.name, attr.value));
+  }
+  // add events
+  if (options && options.events && options.events.length > 0) {
+    options.events.forEach((evt: IEvent) => element.addEventListener(evt.name, evt.callback));
   }
   // element.addEventListener('message', msg => console.log(msg));
   container.appendChild(element);

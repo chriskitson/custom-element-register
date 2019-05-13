@@ -39,3 +39,4 @@ Property | Example Value | Description
 --- | --- | ---
 className | 'myCssClassName' | CSS class name
 attributes | [ { name: 'attrName', value: 'attrValue' } ] | Array of element attributes
+events | [ { name: 'eventName', callback: (e) => eventCallback() } ] | Array of element event listeners
