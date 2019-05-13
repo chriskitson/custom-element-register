@@ -27,3 +27,10 @@ import { CreateElement } from 'custom-element-register';
 
 CreateElement(document.getElementBy('#myContainer'), 'my-app');
 ```
+
+## Options
+
+Property | Example Value | Description
+--- | --- | ---
+className | 'myCssClassName' | CSS class name
+attributes | [ { name: 'attrName', value: 'attrValue' } ] | Array of element attributes
